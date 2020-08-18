@@ -1,0 +1,112 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 18px;
+    font-family: monospace;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    color: #454545;
+}
+
+body {
+    background-image: linear-gradient(135deg, #afeeee 0, white 50%, #afeeee 100%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header.display-grid {
+    place-items: center;
+    margin-top: 5px;
+}
+
+.display-grid {
+    display: grid;
+    /* align-items: center; /* vertically */
+    /* justify-items: center; /* horizontally */
+    place-items: center; /* vertically and horizontally */
+}
+
+/* HEADER */
+
+header {
+    grid-template-columns: 1fr 1fr;
+}
+
+hr {
+    height: 1px;
+    width: 95vw;
+    justify-self: center;
+}
+
+/* MAIN */
+
+main {
+    min-height: 600px;
+}
+
+main > * {
+    padding: 0 60px;
+}
+
+/* FOOTER */
+
+footer {
+    grid-template-columns: 1fr;
+}
+
+@media(max-width: 1000px) {
+    
+    header nav div span {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .space {
+        display: none;
+    }
+}
+
+
+/* 
+
+faz projeto
+compra material
+faz peca
+cronometra o feitio da peca
+calcula custo baseado no tempo
+lista de materiais, com valor
+custo dos materiais
+calculo do custo automatico
+calculo baseado em modelos de produtos, como pre padroes
+
+cronometro, estimativa minima e maxima de tempo e de valor
+
+vamo la, entao vc quer um sisteminha que:
+
+catalogue o seu estoque de materiais;
+catalogue o seu estoque de produtos finais;
+associe o cadastro de um produto final com a reducao no estoque de materiais baseada no produto;
+calculo de custo baseado nos materiais;
+
+procede?
+
+*/

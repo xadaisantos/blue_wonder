@@ -1,0 +1,11 @@
+main {
+    text-align: left;
+}
+
+main h2 {
+    margin-bottom: 15px;
+}
+
+h2 + p {
+    margin-bottom: 50px;
+}

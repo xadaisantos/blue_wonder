@@ -1,0 +1,40 @@
+/* MAIN */
+
+main {
+    grid-template-columns: 1fr;
+}
+
+form {
+    width: 80%;
+}
+
+form div {
+    margin: 40px auto 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+textarea {
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 5px;
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1000px) {
+    
+    textarea {
+        width: 80vw;
+    }
+}

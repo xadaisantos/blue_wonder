@@ -1,0 +1,8 @@
+main {
+    text-align: left;
+    font-size: 2rem;
+}
+
+main > * {
+    margin-bottom: 1rem;
+}

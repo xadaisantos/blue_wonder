@@ -1,0 +1,29 @@
+/* MAIN */
+
+main {
+    grid-template-columns: 1fr;
+}
+
+#number {
+    width: 400px;
+    height: 400px;
+    /* background-color: #ddffff; */
+    /* border: 2px solid #bbffff; */
+    font-size: 4rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    /* border-radius: 50%; */
+}
+
+button {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+@media(max-width: 1000px) {
+    #number {
+        width: 250px;
+        height: 250px;
+    }
+}

@@ -1,0 +1,39 @@
+main {
+    text-align: left;
+    font-size: 2rem;
+}
+
+main > input, main > label {
+    padding: 0;
+}
+
+main > div {
+    margin: 40px 0;
+    font-size: 1.5rem;
+}
+
+#display-equacao {
+    font-size: inherit;
+}
+
+#outputs {
+    font-size: 2rem;
+    margin-top: 40px;
+    text-align: left;
+}
+
+input {
+    margin-right: 5px;
+    padding: 5px;
+    height: 60px;
+    width: 120px;
+    font-size: inherit;
+}
+
+@media(max-width: 800px) {
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
