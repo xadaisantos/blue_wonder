@@ -41,10 +41,3 @@ button {
         height: 150px;
     }
 }
-
-@media(max-width: 600px) {
-    textarea {
-        
-    }
-    
-}

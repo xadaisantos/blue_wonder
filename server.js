@@ -27,6 +27,10 @@ app.get("/equacao", (req, res) => {
     res.render("equacao", {css: "equacaoStyle.css", js: "equacaoJs.js"});
 })
 
+app.get("/jogodavelha", (req, res) => {
+    res.render("jogodavelha", {css: "jogodavelhaStyle.css", js: "jogodavelhaJs.js"});
+})
+
 app.get("/counter", (req, res) => {
     res.render("counter", {css: "counterStyle.css", js: "counterJs.js"});
 })
