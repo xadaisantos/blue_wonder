@@ -1,11 +1,11 @@
 main {
-    text-align: left;
+    text-align: justify;
 }
 
 main h2 {
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
-h2 + p {
-    margin-bottom: 50px;
+main p {
+    margin-bottom: 30px;
 }

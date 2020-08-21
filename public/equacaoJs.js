@@ -6,17 +6,22 @@ class Equacao {
         return `${coef_a} ${coef_b} ${coef_c}`
     }
     static delta (a, b, c) {
-        if (a === 0) {
-            return `Sem delta. Equação do primeiro grau.`;
+        if (a === 0 && b === 0) {
+            return "Constantes não possuem delta."
+        } else if (a === 0) {
+            return "Equações do primeiro grau não possuem delta.";
         } else {
             return b**2 - (4 * a * c)
         }
     }
+
     static raizes (a, b, c) {
-        if (Equacao.delta(a, b, c) < 0) {
-            return `Sem raízes nos números reais. Delta negativo.`
+        if (a === 0 && b === 0) {
+            return "Constantes não possuem raízes."
         } else if (a === 0) {
             return (0 - c) / b;
+        } else if (Equacao.delta(a, b, c) < 0) {
+            return `Sem raízes nos números reais. Delta negativo.`
         } else {
             let raizes = new Set()
             let raiz_1 = (-b + (Equacao.delta(a, b, c))**(1/2)) / (2*a)
@@ -34,6 +39,7 @@ class Equacao {
             return texto;
         }
     }
+
     static descricao (a, b, c) {
         console.log(`Equacao: ${Equacao.mostrar_equacao(a, b, c)}`);
         console.log(`Delta: ${Equacao.delta(a, b, c)}`);

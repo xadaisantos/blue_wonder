@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const exphbs = require('express-handlebars');
- 
+
 const app = express();
 
 app.engine("handlebars", exphbs({ defaultLayout:"main" }));
@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, "public"))); // Defines a folder for
 
 // ----- Middleware --------------------------------------------
 
-app.get("/home", (req, res) => {
+app.get(["/", "/home"], (req, res) => {
     res.render("home", {css: "homeStyle.css", js: ""});
 })
 
@@ -36,5 +36,4 @@ app.get("/about", (req, res) => {
 })
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log("----- SERVER CONNECTED -----"));
-
+app.listen(port);

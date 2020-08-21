@@ -7,21 +7,13 @@
 }
 
 html, body {
-    font-size: 18px;
+    font-size: 16px;
     font-family: monospace;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
     color: #454545;
 }
 
 body {
-    background-image: linear-gradient(135deg, #afeeee 0, white 50%, #afeeee 100%);
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    text-align: center;
 }
 
 ul {
@@ -33,80 +25,51 @@ a {
     color: inherit;
 }
 
-header.display-grid {
-    place-items: center;
-    margin-top: 5px;
-}
-
-.display-grid {
-    display: grid;
-    /* align-items: center; /* vertically */
-    /* justify-items: center; /* horizontally */
-    place-items: center; /* vertically and horizontally */
+main {
+    min-height: calc(100vh - 220px - 110px);
+    padding: 20px;
+    background-color: #f1f1f1;
 }
 
 /* HEADER */
 
 header {
-    grid-template-columns: 1fr 1fr;
+    height: 220px;
+    padding: 20px 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    background-color: #454545;
+    color: #f1f1f1;
 }
 
-hr {
-    height: 1px;
-    width: 95vw;
-    justify-self: center;
+header a:hover {
+    text-decoration: underline;
 }
 
 /* MAIN */
 
-main {
-    min-height: 600px;
-}
-
-main > * {
-    padding: 0 60px;
-}
-
 /* FOOTER */
 
 footer {
+    display: grid;
+    place-items: center;
+    height: 110px;
     grid-template-columns: 1fr;
+    background-color: #454545;
+    color: #f1f1f1;
+    padding: 20px 0;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1000px) { /* cheque 360px, 600px, 800px, 100px0, 1100px */
     
-    header nav div span {
-        display: block;
-        margin-bottom: 5px;
+    header nav div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 5px;
     }
     
     .space {
         display: none;
     }
 }
-
-
-/* 
-
-faz projeto
-compra material
-faz peca
-cronometra o feitio da peca
-calcula custo baseado no tempo
-lista de materiais, com valor
-custo dos materiais
-calculo do custo automatico
-calculo baseado em modelos de produtos, como pre padroes
-
-cronometro, estimativa minima e maxima de tempo e de valor
-
-vamo la, entao vc quer um sisteminha que:
-
-catalogue o seu estoque de materiais;
-catalogue o seu estoque de produtos finais;
-associe o cadastro de um produto final com a reducao no estoque de materiais baseada no produto;
-calculo de custo baseado nos materiais;
-
-procede?
-
-*/

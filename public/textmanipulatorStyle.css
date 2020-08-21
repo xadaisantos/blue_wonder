@@ -1,7 +1,7 @@
-/* MAIN */
-
 main {
     grid-template-columns: 1fr;
+    display: grid;
+    place-items: flex-start center;
 }
 
 form {
@@ -9,32 +9,42 @@ form {
 }
 
 form div {
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+#labels {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 label {
     display: block;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
 }
 
 textarea {
-    width: 800px;
+    width: 700px;
     height: 300px;
     padding: 10px;
-    font-size: 1rem;
 }
 
 button {
     padding: 5px;
-    width: auto;
-    font-size: 1rem;
+    width: 100px;
     margin-bottom: 10px;
 }
 
 @media(max-width: 1000px) {
     
     textarea {
-        width: 80vw;
+        width: 85%;
+        height: 150px;
     }
+}
+
+@media(max-width: 600px) {
+    textarea {
+        
+    }
+    
 }

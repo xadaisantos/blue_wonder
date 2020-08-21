@@ -107,5 +107,4 @@ copyClipboard.addEventListener("click", (e) => {
 
     textArea.select();
     document.execCommand("copy");
-    alert("Text copied.");
 })
