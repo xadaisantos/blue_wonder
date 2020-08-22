@@ -10,7 +10,6 @@ main {
 }
 
 #mensagem-2 {
-    color: green;
     font-weight: bold;
     display: none;
 }
@@ -18,8 +17,8 @@ main {
 table {
     user-select: none;
     margin: 10px 0 10px 0;
-    width: 60vmin;
-    height: 60vmin;
+    width: 50vmin;
+    height: 50vmin;
     table-layout: fixed;
 }
 
@@ -29,7 +28,7 @@ table td {
 
 table * {
     border: 1px solid black;
-    font-size: calc(60vmin / 7);
+    font-size: calc(50vmin / 7);
 }
 
 #recomecar {

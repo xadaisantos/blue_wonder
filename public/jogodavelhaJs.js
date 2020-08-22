@@ -17,6 +17,18 @@ function checarVitoria(array){
     }
 }
 
+function checarTabuleiroCheio(){
+    let espacosTexto = [];
+
+    for (let i = 0; i < espacos.length; i++) {
+        espacosTexto.push(espacos[i].textContent)
+    }
+
+    if (espacosTexto.every(item => item != "")) {
+        return true;
+    }
+}
+
 let continuar = true;
 
 espacos.forEach(quadrado => {
@@ -46,7 +58,21 @@ espacos.forEach(quadrado => {
                 mensagem_1.style.display = "none";
                 mensagem_2.innerHTML = `----- O jogador <strong>"${quem_ganhou}"</strong> venceu! -----`
                 mensagem_2.style.display = "block";
+                break;
+            } else if (!quem_ganhou && checarTabuleiroCheio()) {
+                continuar = false;
+                mensagem_1.style.display = "none";
+                mensagem_2.innerHTML = `----- EMPATE! -----`
+                mensagem_2.style.display = "block";
+                break;
             };
+            
+            // else if (checarTabuleiroCheio()) {
+            //     continuar = false;
+            //     mensagem_1.style.display = "none";
+            //     mensagem_2.innerHTML = `----- EMPATE! -----`
+            //     mensagem_2.style.display = "block";
+            // }
         };
     })
 })
