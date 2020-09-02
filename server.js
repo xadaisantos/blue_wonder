@@ -27,6 +27,10 @@ app.get("/equacao", (req, res) => {
     res.render("equacao", {css: "equacaoStyle.css", js: "equacaoJs.js"});
 })
 
+app.get("/taxas", (req, res) => {
+    res.render("taxas", {css: "taxasStyle.css", js: "taxasJs.js"});
+})
+
 app.get("/jogodavelha", (req, res) => {
     res.render("jogodavelha", {css: "jogodavelhaStyle.css", js: "jogodavelhaJs.js"});
 })
