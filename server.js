@@ -19,28 +19,34 @@ app.get(["/", "/home"], (req, res) => {
     res.render("home", {css: "homeStyle.css", js: ""});
 })
 
-app.get("/textmanipulator", (req, res) => {
-    res.render("textmanipulator", {css: "textmanipulatorStyle.css", js: "textmanipulatorJs.js"});
+app.get("/conversordetexto", (req, res) => {
+    let name = "conversordetexto";
+    res.render(name, {css: `${name}.css`, js: `${name}.js`});
 })
 
 app.get("/equacao", (req, res) => {
-    res.render("equacao", {css: "equacaoStyle.css", js: "equacaoJs.js"});
+    let name = "equacao";
+    res.render(name, {css: `${name}.css`, js: `${name}.js`});
 })
 
-app.get("/taxas", (req, res) => {
-    res.render("taxas", {css: "taxasStyle.css", js: "taxasJs.js"});
+app.get("/conversordetaxas", (req, res) => {
+    let name = "conversordetaxas";
+    res.render(name, {css: `${name}.css`, js: `${name}.js`});
 })
 
 app.get("/jogodavelha", (req, res) => {
-    res.render("jogodavelha", {css: "jogodavelhaStyle.css", js: "jogodavelhaJs.js"});
+    let name = "jogodavelha";
+    res.render(name, {css: `${name}.css`, js: `${name}.js`});
 })
 
-app.get("/counter", (req, res) => {
-    res.render("counter", {css: "counterStyle.css", js: "counterJs.js"});
+app.get("/contador", (req, res) => {
+    let name = "contador";
+    res.render(name, {css: `${name}.css`, js: `${name}.js`});
 })
 
-app.get("/about", (req, res) => {
-    res.render("about", {css: "aboutStyle.css", js: ""});
+app.get("/sobre", (req, res) => {
+    let name = "sobre";
+    res.render(name, {css: `${name}.css`, js: `${name}.js`});
 })
 
 const port = process.env.PORT || 3000;
