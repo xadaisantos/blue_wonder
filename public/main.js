@@ -1,0 +1,16 @@
+let burguerMenu = document.getElementById("burguer");
+let normalMenu = document.getElementById("menu");
+
+let normalMenuDisplay = false;
+
+burguerMenu.addEventListener("click", () => {
+    console.log("burguer menu was clicked")
+    if (normalMenuDisplay == false) {
+        normalMenuDisplay = !normalMenuDisplay;
+        normalMenu.style.display = "block";
+    } else {
+        normalMenuDisplay = !normalMenuDisplay;
+        normalMenu.style.display = "none";
+    }
+
+})
