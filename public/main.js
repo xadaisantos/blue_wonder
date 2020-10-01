@@ -4,12 +4,18 @@ let normalMenu = document.getElementById("menu");
 let normalMenuDisplay = false;
 
 burguerMenu.addEventListener("click", () => {
-    console.log("burguer menu was clicked")
     if (normalMenuDisplay == false) {
-        normalMenuDisplay = !normalMenuDisplay;
+        normalMenuDisplay = true;
         normalMenu.style.display = "grid";
     } else {
-        normalMenuDisplay = !normalMenuDisplay;
+        normalMenuDisplay = false;
+        normalMenu.style.display = "none";
+    }
+})
+
+document.addEventListener("click", (e) => {
+    if (e.target.id != "burguer" && !e.target.classList.contains("line")) {
+        normalMenuDisplay = false;
         normalMenu.style.display = "none";
     }
 })
