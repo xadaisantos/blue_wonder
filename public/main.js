@@ -7,10 +7,9 @@ burguerMenu.addEventListener("click", () => {
     console.log("burguer menu was clicked")
     if (normalMenuDisplay == false) {
         normalMenuDisplay = !normalMenuDisplay;
-        normalMenu.style.display = "block";
+        normalMenu.style.display = "grid";
     } else {
         normalMenuDisplay = !normalMenuDisplay;
         normalMenu.style.display = "none";
     }
-
 })

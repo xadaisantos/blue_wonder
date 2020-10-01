@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 html, body {
@@ -56,19 +57,26 @@ header a:hover {
     background-color: var(--color-one);
     text-align: left;
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: 0px;
+    border: 2px solid black;
     display: none;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
 }
 
 #burguer {
+    border: 2px solid black;
+    padding: 5px;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
 }
 
 .line {
-    margin-top: 4px;
     height: 0.4rem;
     width: 30px;
     background-color: var(--color-two);
@@ -87,11 +95,4 @@ footer {
     background-color: var(--color-one);
     color: var(--color-two);
     padding: 20px 0;
-}
-
-@media(max-width: 1100px) { /* cheque 360px, 600px, 800px, 100px0, 1100px */
-    
-    header nav div {
-        
-    }
 }

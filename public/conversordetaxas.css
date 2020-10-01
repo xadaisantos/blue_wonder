@@ -3,7 +3,8 @@ main {
 }
 
 main input {
-    width: 30px;
+    width: 40px;
+    padding: 1px 0 1px 1px;
 }
 
 main label {

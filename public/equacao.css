@@ -2,8 +2,9 @@ main {
     text-align: justify;
 }
 
-main > input, main > label {
-    padding: 0;
+main input {
+    width: 40px;
+    padding: 1px 0 1px 1px;
 }
 
 main > div:first-child {
