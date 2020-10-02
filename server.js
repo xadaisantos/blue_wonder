@@ -44,6 +44,11 @@ app.get("/contador", (req, res) => {
     res.render(name, {css: `${name}.css`, js: `${name}.js`});
 })
 
+app.get("/buscadorgithub", (req, res) => {
+    let name = "buscadorgithub";
+    res.render(name, {css: `${name}.css`, js: `${name}.js`});
+})
+
 app.get("/sobre", (req, res) => {
     let name = "sobre";
     res.render(name, {css: `${name}.css`, js: `${name}.js`});
