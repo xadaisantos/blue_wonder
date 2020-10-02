@@ -15,10 +15,6 @@ main input[type="text"], main button {
     padding: 5px;
 }
 
-main button {
-    width: 30px;
-}
-
 #informacao, #nao-encontrou {
     margin-top: 15px;
     display: none;
