@@ -65,6 +65,10 @@ header a:hover {
     grid-row-gap: 10px;
 }
 
+#menu div, #menu a {
+    width: 100%;
+}
+
 #burguer {
     border: 2px solid black;
     padding: 5px;
