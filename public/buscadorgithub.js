@@ -1,5 +1,5 @@
-let buscadorInput = document.getElementById("buscadorgithub"); // http://127.0.0.1:3000/buscadorgithub
-let buscadorBotao = document.getElementById("buscar-github");
+let buscadorInput = document.getElementById("buscadorInput"); // http://127.0.0.1:3000/buscadorgithub
+let buscador = document.querySelector("form");
 
 let divInformacao = document.getElementById("informacao");
 let divNaoEncontrou = document.getElementById("nao-encontrou");
@@ -59,6 +59,7 @@ let buscaECriaUsuario = () => {
         })
 }
 
-buscadorBotao.addEventListener("click", () => {
+buscador.addEventListener("submit", (event) => {
+    event.preventDefault();
     buscaECriaUsuario();
 });
