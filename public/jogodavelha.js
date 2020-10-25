@@ -87,3 +87,5 @@ recomecar.addEventListener("click", () => {
         espacos[i].textContent = "";
     }
 })
+
+// playing the sequence 147853269 ends in a tie when it should have been a win, fix it
